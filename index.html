@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>花都影视hdys网-都市短剧片单与选剧指南</title>
+<meta name="description" content="花都影视hdys网收录都市情感、悬疑刑侦、职场商战与港风怀旧短剧片单，提供分集时长、更新节奏、主演阵容与取景地信息，附选剧方法与观众实测评论，帮助快速定位想看的剧集。">
+<meta name="keywords" content="花都影视hdys网">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a2340'/%3E%3Cpath d='M18 22h28v20H18z' fill='none' stroke='%23f2b544' stroke-width='4'/%3E%3Cpath d='M27 28l10 5-10 5z' fill='%23f2b544'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1a2340;
+  --ink-soft:#3c4664;
+  --paper:#f7f5f0;
+  --card:#ffffff;
+  --line:#dfd9cd;
+  --gold:#c8871b;
+  --gold-soft:#f2b544;
+  --teal:#1f6f6b;
+  --plum:#7a3352;
+  --muted:#6d6a62;
+  --radius:10px;
+  --shadow:0 2px 10px rgba(26,35,64,.08);
+  --shadow-lift:0 8px 22px rgba(26,35,64,.14);
+  --space:clamp(14px,2.4vw,26px);
+  --font:"Noto Serif SC","Songti SC","SimSun",Georgia,serif;
+  --font-sans:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --ann-h:38px;
+  --head-h:62px;
+  --stick:calc(var(--ann-h) + var(--head-h));
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--font-sans);font-size:16px;line-height:1.75;
+  -webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{font-family:var(--font);line-height:1.35;margin:0 0 .5em}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 .9em;padding-left:1.15em}
+section[id],div[id]{scroll-margin-top:calc(var(--stick) + 14px)}
+
+.annbar{
+  position:sticky;top:0;z-index:60;
+  background:var(--ink);color:#f0e6d2;
+  font-size:13px;letter-spacing:.02em;
+  height:var(--ann-h);display:flex;align-items:center;
+}
+.annbar .wrap{display:flex;align-items:center;gap:10px;overflow:hidden;white-space:nowrap}
+.annbar b{color:var(--gold-soft);font-weight:600}
+.annbar .dot{width:6px;height:6px;border-radius:50%;background:var(--gold-soft);flex:none}
+.head{
+  position:sticky;top:var(--ann-h);z-index:55;
+  background:rgba(247,245,240,.96);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);height:var(--head-h);
+}
+.wrap{width:min(1180px,100% - 2*var(--space));margin-inline:auto}
+.head .wrap{display:flex;align-items:center;gap:18px;height:100%}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:34px;height:34px;flex:none}
+.brand-txt{font-family:var(--font);font-size:17px;font-weight:700;color:var(--ink);letter-spacing:.02em}
+.brand-txt small{display:block;font-family:var(--font-sans);font-size:10px;font-weight:400;color:var(--muted);letter-spacing:.14em;line-height:1}
+.nav{display:flex;gap:2px;margin-left:auto;flex-wrap:wrap}
+.nav a{
+  color:var(--ink-soft);font-size:14px;padding:7px 10px;border-radius:6px;
+  transition:background .18s,color .18s;
+}
+.nav a:hover{background:#eae5da;color:var(--ink);text-decoration:none}
+.nav a:focus-visible,.btn:focus-visible,.menu-btn:focus-visible,.tag:focus-visible,
+summary:focus-visible,#toTop:focus-visible,.search input:focus-visible,.search button:focus-visible{
+  outline:3px solid var(--gold);outline-offset:2px;
+}
+.head-tools{display:flex;align-items:center;gap:10px;flex:none}
+.search{display:flex;align-items:center;border:1px solid var(--line);background:#fff;border-radius:8px;overflow:hidden}
+.search input{
+  border:0;background:transparent;padding:7px 10px;font-size:13px;width:132px;
+  font-family:var(--font-sans);color:var(--ink);
+}
+.search input:focus{outline:none}
+.search button{
+  border:0;background:var(--ink);color:#fff;font-size:13px;padding:7px 11px;cursor:pointer;
+  font-family:var(--font-sans);
+}
+.search button:hover{background:var(--gold)}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:8px;
+  padding:7px 11px;font-size:13px;color:var(--ink);cursor:pointer;font-family:var(--font-sans);
+}
+.searchnote{
+  display:none;font-size:13px;color:var(--plum);background:#fdf1e2;
+  border:1px solid #f0d5ac;border-radius:8px;padding:8px 12px;margin:14px 0 0;
+}
+.searchnote.on{display:block}
+
+.hero{
+  position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(1200px 320px at 82% -10%,rgba(242,181,68,.22),transparent 62%),
+    linear-gradient(160deg,#fbf9f4 0%,#f1ece2 100%);
+}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:36px;align-items:center;padding-block:clamp(26px,4.4vw,52px)}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.18em;
+  color:var(--plum);text-transform:uppercase;border:1px solid #dfc9c0;background:#fbf2ee;
+  padding:4px 10px;border-radius:999px;margin-bottom:14px;font-family:var(--font-sans);
+}
+.hero h1{font-size:clamp(30px,4.6vw,50px);letter-spacing:.01em;margin-bottom:14px;color:var(--ink)}
+.hero h1 em{font-style:normal;color:var(--gold);position:relative}
+.lede{font-size:clamp(15px,1.5vw,17px);color:var(--ink-soft);max-width:34em;margin-bottom:20px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:8px;
+  font-size:14.5px;font-family:var(--font-sans);border:1px solid transparent;
+  transition:transform .16s,box-shadow .16s,background .16s;cursor:pointer;
+}
+.btn-primary{background:var(--ink);color:#fdf9f0}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:var(--shadow-lift);text-decoration:none}
+.btn-ghost{border-color:var(--line);background:#fff;color:var(--ink)}
+.btn-ghost:hover{transform:translateY(-2px);border-color:var(--gold);text-decoration:none}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;border-top:1px dashed var(--line);padding-top:16px}
+.hero-stats div{min-width:88px}
+.hero-stats b{display:block;font-family:var(--font);font-size:22px;color:var(--ink);line-height:1.2}
+.hero-stats span{font-size:12.5px;color:var(--muted)}
+.hero-visual{position:relative;aspect-ratio:5/4;min-height:280px}
+.hero-visual .frame{
+  position:absolute;inset:0;border-radius:14px;overflow:hidden;
+  background:linear-gradient(150deg,#1f2a4d,#2e3a63 55%,#42324a);
+  box-shadow:var(--shadow-lift);
+}
+.hero-visual .frame::after{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(115deg,rgba(255,255,255,.05) 0 2px,transparent 2px 9px);
+  pointer-events:none;
+}
+.hero-visual .float-card{
+  position:absolute;background:#fff;border-radius:10px;padding:10px 13px;box-shadow:var(--shadow-lift);
+  font-size:12.5px;color:var(--ink-soft);border:1px solid var(--line);
+}
+.hero-visual .f1{left:-8px;top:16%;max-width:190px}
+.hero-visual .f2{right:-6px;bottom:14%;max-width:200px}
+.hero-visual .f1 b,.hero-visual .f2 b{display:block;color:var(--ink);font-size:13.5px;margin-bottom:2px;font-family:var(--font)}
+.hero-visual .tagline{
+  position:absolute;left:16px;bottom:16px;color:#f6e9cf;font-size:12.5px;letter-spacing:.05em;
+}
+.screen{
+  position:absolute;inset:11% 12% 24% 12%;border-radius:8px;
+  border:1px solid rgba(246,233,207,.35);background:rgba(10,16,34,.5);
+  display:flex;align-items:center;justify-content:center;
+}
+.screen svg{width:64%;height:auto;opacity:.92}
+
+main{padding-block:clamp(28px,4vw,46px)}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 288px;gap:clamp(22px,3vw,38px);align-items:start}
+.content{min-width:0}
+.side{position:sticky;top:calc(var(--stick) + 16px);display:flex;flex-direction:column;gap:16px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 16px 14px}
+.panel h3{font-size:14.5px;margin-bottom:10px;color:var(--ink);letter-spacing:.02em}
+.side-nav{display:flex;flex-direction:column;gap:2px}
+.side-nav a{
+  font-size:13.5px;color:var(--ink-soft);padding:6px 9px;border-radius:6px;border-left:3px solid transparent;
+}
+.side-nav a:hover{background:#f2eee5;text-decoration:none}
+.side-nav a.active{color:var(--ink);background:#f3ecdf;border-left-color:var(--gold);font-weight:600}
+.side .mini{font-size:13px;color:var(--muted);line-height:1.7}
+
+.blk{margin-bottom:clamp(26px,3.6vw,42px)}
+.blk-head{display:flex;align-items:baseline;gap:12px;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.blk-head h2{font-size:clamp(20px,2.3vw,25px);margin:0}
+.blk-head .no{font-family:var(--font-sans);font-size:12px;color:var(--gold);letter-spacing:.14em;font-weight:700}
+.blk-head p{margin:0;font-size:13px;color:var(--muted);margin-left:auto;text-align:right}
+
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .18s,box-shadow .18s,border-color .18s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lift);border-color:#cfc6b3}
+.card .thumb{aspect-ratio:16/9;overflow:hidden;background:#e8e2d6}
+.card .thumb img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:12px 13px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:15.5px;margin:0;line-height:1.45}
+.card .meta{font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px}
+.card .desc{font-size:13px;color:var(--ink-soft);margin:0;line-height:1.65}
+.chip{
+  display:inline-block;font-size:11.5px;padding:1px 8px;border-radius:999px;
+  background:#f3ecdf;color:#8a5a10;border:1px solid #ecdcc0;font-family:var(--font-sans);
+}
+.chip.t{background:#e6f1ef;color:#175652;border-color:#c9e0dc}
+.chip.p{background:#f6e8ee;color:#6d2a47;border-color:#ebcdd8}
+
+.list{display:flex;flex-direction:column;gap:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.li{display:grid;grid-template-columns:76px minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 14px;border-top:1px solid #eee8dc}
+.li:first-child{border-top:0}
+.li .date{font-family:var(--font-sans);font-size:12px;color:var(--plum);letter-spacing:.02em}
+.li .t{font-size:14.5px;color:var(--ink);font-weight:600}
+.li .s{font-size:12.5px;color:var(--muted);margin-top:2px;line-height:1.6}
+.li .tag{font-size:11.5px;color:var(--teal);border:1px solid #cbdcd9;border-radius:999px;padding:2px 9px;white-space:nowrap}
+
+.cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.cat{
+  display:block;background:var(--card);border:1px solid var(--line);border-radius:9px;
+  padding:12px 12px 11px;color:var(--ink);transition:border-color .16s,transform .16s,background .16s;
+}
+.cat:hover{border-color:var(--gold);transform:translateY(-2px);text-decoration:none;background:#fffdf8}
+.cat b{display:block;font-size:14.5px;font-family:var(--font);margin-bottom:3px}
+.cat span{font-size:12px;color:var(--muted);line-height:1.5;display:block}
+
+.deep{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(16px,2.6vw,28px);
+}
+.deep .lead{font-size:15px;color:var(--ink-soft)}
+.deep h3{font-size:17px;margin-top:22px;color:var(--ink);border-left:4px solid var(--gold);padding-left:10px}
+.deep h3:first-of-type{margin-top:12px}
+.deep p{font-size:14.8px;color:#2b3350}
+.check{background:#faf7f0;border:1px solid #ebe2d1;border-radius:9px;padding:13px 15px;margin:14px 0}
+.check h4{font-size:13.5px;margin:0 0 8px;color:var(--plum);letter-spacing:.06em;font-family:var(--font-sans)}
+.check ul{margin:0;font-size:13.6px;color:var(--ink-soft)}
+.check li{margin-bottom:5px}
+.quote{
+  border-left:4px solid var(--teal);background:#f2f7f6;padding:12px 15px;border-radius:0 8px 8px 0;
+  font-size:14px;color:#1c4542;margin:14px 0;
+}
+.quote cite{display:block;font-style:normal;font-size:12px;color:var(--muted);margin-top:6px}
+
+.steps{counter-reset:s;display:grid;gap:12px}
+.step{
+  display:grid;grid-template-columns:38px minmax(0,1fr);gap:12px;align-items:start;
+  background:var(--card);border:1px solid var(--line);border-radius:9px;padding:13px 14px;
+}
+.step::before{
+  counter-increment:s;content:counter(s,decimal-leading-zero);
+  font-family:var(--font);font-size:16px;color:var(--gold);font-weight:700;
+  border:1px solid #ecdcc0;background:#fdf6e9;border-radius:6px;text-align:center;line-height:30px;
+}
+.step b{display:block;font-size:14.5px;margin-bottom:2px;font-family:var(--font)}
+.step p{margin:0;font-size:13.4px;color:var(--ink-soft)}
+
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--card)}
+.cmp>div{padding:13px 15px}
+.cmp .a{background:#fbf5ea;border-right:1px solid var(--line)}
+.cmp .b{background:#f2f7f6}
+.cmp h4{font-size:13.5px;margin:0 0 7px;font-family:var(--font-sans);letter-spacing:.06em}
+.cmp .a h4{color:#8a5a10}
+.cmp .b h4{color:#1f6f6b}
+.cmp ul{margin:0;font-size:13.3px;color:var(--ink-soft);padding-left:1.05em}
+
+details.faq{background:var(--card);border:1px solid var(--line);border-radius:9px;margin-bottom:9px;overflow:hidden}
+details.faq summary{
+  cursor:pointer;padding:12px 15px;font-size:14.5px;font-weight:600;color:var(--ink);
+  list-style:none;position:relative;padding-right:38px;font-family:var(--font);
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";position:absolute;right:15px;top:50%;transform:translateY(-50%);
+  color:var(--gold);font-size:19px;font-family:var(--font-sans);line-height:1;
+}
+details.faq[open] summary::after{content:"−"}
+details.faq .ans{padding:0 15px 13px;font-size:13.8px;color:var(--ink-soft)}
+details.faq .ans p{margin:0 0 .6em}
+
+.cmts{display:grid;gap:11px}
+.cmt{
+  background:var(--card);border:1px solid var(--line);border-radius:9px;padding:12px 14px;
+  border-left:3px solid #ddd3c0;
+}
+.cmt .who{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--muted);margin-bottom:6px}
+.cmt .av{
+  width:26px;height:26px;border-radius:50%;background:#e8e1d2;color:#6b5c3d;
+  display:flex;align-items:center;justify-content:center;font-size:12px;font-family:var(--font);flex:none;
+}
+.cmt .who b{color:var(--ink);font-size:13px}
+.cmt p{margin:0;font-size:13.8px;color:#2b3350}
+.cmt .rate{color:var(--gold);font-size:12px;letter-spacing:1px;margin-left:auto;white-space:nowrap}
+.cmt.neg{border-left-color:var(--plum)}
+.cmt.mid{border-left-color:var(--teal)}
+
+.news{display:grid;gap:10px}
+.newsitem{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:12px 14px}
+.newsitem .top{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.newsitem .top b{font-size:14.5px;color:var(--ink);font-family:var(--font)}
+.newsitem time{font-size:12px;color:var(--plum);font-family:var(--font-sans)}
+.newsitem p{margin:5px 0 0;font-size:13.4px;color:var(--ink-soft)}
+.newsitem .lbl{font-size:11.5px;color:var(--teal)}
+
+.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tag{
+  display:inline-block;font-size:13px;padding:6px 13px;border-radius:999px;
+  background:#fff;border:1px solid var(--line);color:var(--ink-soft);
+  transition:border-color .16s,color .16s,transform .16s;
+}
+.tag:hover{border-color:var(--gold);color:#8a5a10;transform:translateY(-2px);text-decoration:none}
+
+.timeline{position:relative;padding-left:20px;border-left:2px solid #e3dac8;display:grid;gap:14px}
+.tl{position:relative}
+.tl::before{
+  content:"";position:absolute;left:-27px;top:6px;width:10px;height:10px;border-radius:50%;
+  background:var(--gold);box-shadow:0 0 0 3px #faf4e6;
+}
+.tl time{font-size:12px;color:var(--plum);font-family:var(--font-sans);letter-spacing:.03em}
+.tl b{display:block;font-size:14.5px;margin:2px 0 2px;font-family:var(--font)}
+.tl p{margin:0;font-size:13.4px;color:var(--ink-soft)}
+
+.rank{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.rk{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:10px;align-items:center;padding:11px 14px;border-top:1px solid #eee8dc}
+.rk:first-child{border-top:0}
+.rk .n{font-family:var(--font);font-size:16px;color:var(--gold);font-weight:700;text-align:center}
+.rk .n.top{color:var(--plum)}
+.rk .nm{font-size:14.5px;font-weight:600;color:var(--ink)}
+.rk .sub{font-size:12.3px;color:var(--muted);line-height:1.55}
+.rk .val{font-size:12.5px;color:var(--teal);white-space:nowrap;border:1px dashed #cbdcd9;border-radius:6px;padding:2px 8px}
+
+.note{font-size:12.6px;color:var(--muted);background:#f4f0e7;border:1px dashed #ded4c0;border-radius:8px;padding:9px 12px;margin-top:12px}
+
+footer{background:var(--ink);color:#cfd3df;margin-top:clamp(30px,4vw,54px);padding-block:clamp(26px,4vw,42px) 20px}
+footer a{color:#e6dcc6}
+footer .cols{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:24px}
+footer h4{color:#f4eddd;font-size:13.5px;letter-spacing:.1em;margin-bottom:9px;font-family:var(--font-sans)}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:13px}
+footer .fbrand{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+footer .fbrand svg{width:30px;height:30px}
+footer .fbrand b{font-family:var(--font);font-size:16px;color:#f4eddd}
+footer p{font-size:13px;color:#a9b0c4;line-height:1.7}
+.fbot{border-top:1px solid rgba(255,255,255,.12);margin-top:24px;padding-top:14px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12.3px;color:#96a0b8}
+.fbot span{line-height:1.7}
+
+#toTop{
+  position:fixed;right:18px;bottom:22px;z-index:70;display:none;
+  width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;
+  background:var(--ink);color:#f4eddd;font-size:18px;box-shadow:var(--shadow-lift);
+}
+#toTop.on{display:block}
+#toTop:hover{background:var(--gold);color:#1a2340}
+
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .side{position:static;order:2}
+  .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cats{grid-template-columns:repeat(3,minmax(0,1fr))}
+  footer .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .nav{
+    position:absolute;left:0;right:0;top:100%;background:#fbf9f4;border-bottom:1px solid var(--line);
+    padding:10px 14px;display:none;flex-direction:column;gap:2px;box-shadow:var(--shadow);
+  }
+  .nav.open{display:flex}
+  .nav a{padding:10px 8px;font-size:15px}
+  .menu-btn{display:inline-block}
+  .head .wrap{gap:10px}
+  .search input{width:96px}
+  .hero .wrap{grid-template-columns:minmax(0,1fr);gap:24px}
+  .hero-visual{aspect-ratio:16/10;min-height:0}
+  .hero-visual .f1{left:2%;top:8%}
+  .hero-visual .f2{right:2%;bottom:8%}
+}
+@media (max-width:640px){
+  .grid3,.grid2,.cats{grid-template-columns:minmax(0,1fr)}
+  .li{grid-template-columns:64px minmax(0,1fr);gap:8px}
+  .li .tag{grid-column:2;justify-self:start}
+  .cmp{grid-template-columns:1fr}
+  .cmp .a{border-right:0;border-bottom:1px solid var(--line)}
+  .blk-head{flex-wrap:wrap}
+  .blk-head p{margin-left:0;width:100%;text-align:left}
+  .head-tools .search{display:none}
+  .hero-stats{gap:16px}
+  .hero-stats b{font-size:19px}
+  footer .cols{grid-template-columns:1fr}
+  #toTop{right:12px;bottom:14px;width:40px;height:40px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .card:hover,.cat:hover,.tag:hover,.btn:hover{transform:none!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="annbar" role="region" aria-label="站内公告">
+  <div class="wrap">
+    <span class="dot" aria-hidden="true"></span>
+    <b>花都影视hdys网</b>
+    <span>11月6日更新：《雾港回声》第18—20集上线，追剧日历同步调整；都市短剧片单新增6部。</span>
+  </div>
+</div>
+
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="花都影视hdys网 首页">
+      <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#1a2340"/>
+        <path d="M18 22h28v20H18z" fill="none" stroke="#f2b544" stroke-width="4"/>
+        <path d="M27 28l10 5-10 5z" fill="#f2b544"/>
+        <circle cx="48" cy="16" r="3.2" fill="#7a3352"/>
+      </svg>
+      <span class="brand-txt">花都影视hdys网<small>剧集片单 · 选剧参考</small></span>
+    </a>
+    <nav class="nav" id="mainNav" aria-label="主题导航">
+      <a href="/#overview">领域概览</a>
+      <a href="/#picks">精选片单</a>
+      <a href="/#latest">追剧日历</a>
+      <a href="/#cats">频道分类</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">选剧指南</a>
+      <a href="/#faq">常见问答</a>
+    </nav>
+    <div class="head-tools">
+      <form class="search" id="searchForm" role="search" aria-label="站内本地检索">
+        <input type="search" id="q" placeholder="搜剧名/演员" aria-label="输入剧名或演员名进行本地检索" autocomplete="off">
+        <button type="submit">查找</button>
+      </form>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">菜单</button>
+    </div>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="wrap">
+    <div>
+      <span class="kicker">都市短剧 · 片单与节奏观察</span>
+      <h1 id="heroTitle">花都影视hdys网</h1>
+      <p class="lede">按“一集一个钩子”重新整理都市短剧：情感、悬疑、职场、港风四条主线，标注每部的分集时长、更新节拍、主演与取景地。追之前先看清总集数和平台排播，少走弯路。</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/#picks">查看本周精选片单</a>
+        <a class="btn btn-ghost" href="/#latest">追剧日历与更新时间</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>4</b><span>主题主线</span></div>
+        <div><b>126</b><span>在列短剧条目</span></div>
+        <div><b>18</b><span>条追剧日历</span></div>
+        <div><b>37</b><span>条观众实测评论</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="frame">
+        <div class="screen">
+          <svg viewBox="0 0 240 130" role="img" aria-hidden="true">
+            <rect x="8" y="10" width="224" height="110" rx="6" fill="none" stroke="#f2b544" stroke-width="2" opacity=".8"/>
+            <path d="M8 44h224M8 80h224" stroke="#f2b544" stroke-width="1" opacity=".35"/>
+            <path d="M70 62l24-14v28z" fill="#f2b544" opacity=".9"/>
+            <rect x="112" y="52" width="90" height="6" rx="3" fill="#e6d9bd" opacity=".55"/>
+            <rect x="112" y="66" width="64" height="6" rx="3" fill="#e6d9bd" opacity=".35"/>
+          </svg>
+        </div>
+        <span class="tagline">片单 · 节奏 · 更新</span>
+      </div>
+      <div class="float-card f1"><b>《雾港回声》</b>悬疑刑侦 · 单集 12 分钟 · 周三双更</div>
+      <div class="float-card f2"><b>《九号售楼处》</b>职场商战 · 24 集 · 11月6日完结</div>
+    </div>
+  </div>
+</section>
+
+<main id="main">
+  <div class="wrap layout">
+
+    <div class="content">
+
+      <p class="searchnote" id="searchNote" role="status" aria-live="polite"></p>
+
+      <section class="blk" id="overview">
+        <div class="blk-head">
+          <span class="no">01</span>
+          <h2>都市短剧领域概览：四条主线怎么分</h2>
+          <p>按类型与观看成本划分</p>
+        </div>
+        <div class="grid2">
+          <div class="card">
+            <div class="body">
+              <h3>都市情感短剧：靠关系浓度留住人</h3>
+              <p class="desc">常见 20—30 集、单集 8—12 分钟，主线多为旧情重逢、合租、离婚后重启。判断质量看第二集是否给出关系的具体障碍，比如房贷、职业调动、家人反对。</p>
+              <div class="meta"><span class="chip">情感</span><span>单集 8—12 分钟</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="body">
+              <h3>悬疑刑侦短剧：钩子密度决定留存</h3>
+              <p class="desc">2026 年备案的都市悬疑短剧多在 18—24 集，单集 10—15 分钟。开头两集必须给出凶案现场、时间锚点和至少一个错误线索，否则中段容易塌。</p>
+              <div class="meta"><span class="chip t">悬疑</span><span>18—24 集常见</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="body">
+              <h3>职场商战短剧：看规则写得细不细</h3>
+              <p class="desc">售楼处、律所、餐饮供应链是高频场景。规则写得细的剧会让观众记住合同条款、竞业限制和回款账期；只喊口号的剧通常到第五集就开始注水。</p>
+              <div class="meta"><span class="chip p">职场</span><span>单集 12—15 分钟</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="body">
+              <h3>港风怀旧短剧：氛围成本最高</h3>
+              <p class="desc">霓虹招牌、茶餐厅、旧式唐楼是标配，但画面做旧容易掩盖叙事短板。选看时优先挑标注具体年份与真实街名的条目，信息越具体越可信。</p>
+              <div class="meta"><span class="chip">港风</span><span>单集 10—14 分钟</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="note">条目数字为站内片单统计口径：只收录有明确总集数与排播信息的短剧，不含预告片与花絮。</div>
+      </section>
+
+      <section class="blk" id="picks">
+        <div class="blk-head">
+          <span class="no">02</span>
+          <h2>本周精选片单：六部各有明确看点</h2>
+          <p>按首播时间排序</p>
+        </div>
+        <div class="grid3">
+          <article class="card">
+            <div class="thumb"><img src="https://picsum.photos/seed/hdys-foggyport/640/360" width="640" height="360" loading="lazy" alt="雾港码头夜戏取景地，水面反光与集装箱轮廓"></div>
+            <div class="body">
+              <h3>《雾港回声》</h3>
+              <p class="desc">刑侦线，主线是码头沉箱旧案。第18集起把法医鉴定流程拆成两步，可信度明显上升。</p>
+              <div class="meta"><span class="chip t">悬疑刑侦</span><span>20 集 · 周三双更</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><img src="https://picsum.photos/seed/hdys-salesoffice/640/360" width="640" height="360" loading="lazy" alt="售楼处沙盘与样板间走廊，暖色射灯"></div>
+            <div class="body">
+              <h3>《九号售楼处》</h3>
+              <p class="desc">职场商战，讲清退定金与认购书条款，第11集的谈判戏有具体数字支撑。</p>
+              <div class="meta"><span class="chip p">职场商战</span><span>24 集 · 11月6日完结</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><img src="https://picsum.photos/seed/hdys-oldstreet/640/360" width="640" height="360" loading="lazy" alt="旧唐楼骑楼街景，夜间霓虹灯牌与糖水铺"></div>
+            <div class="body">
+              <h3>《骑楼下的糖水铺》</h3>
+              <p class="desc">港风家庭线，母女两代经营同一间铺。取景地在老城区，街名与铺位号都能对得上。</p>
+              <div class="meta"><span class="chip">港风怀旧</span><span>22 集 · 周二单更</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><img src="https://picsum.photos/seed/hdys-flatmate/640/360" width="640" height="360" loading="lazy" alt="合租公寓客厅，沙发与落地窗与打包纸箱"></div>
+            <div class="body">
+              <h3>《合租第三年》</h3>
+              <p class="desc">都市情感，写的是到期续租和押金分摊。冲突不靠误会，靠账单和工时。</p>
+              <div class="meta"><span class="chip">都市情感</span><span>26 集 · 每日更新</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><img src="https://picsum.photos/seed/hdys-courtroom/640/360" width="640" height="360" loading="lazy" alt="律所会议室长桌，卷宗与投影幕布"></div>
+            <div class="body">
+              <h3>《第十二份证词》</h3>
+              <p class="desc">律政职场，每集处理一份证词。第14集证人翻供的动机给了三段前情回看。</p>
+              <div class="meta"><span class="chip p">律政职场</span><span>18 集 · 周五双更</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb"><img src="https://picsum.photos/seed/hdys-latebus/640/360" width="640" height="360" loading="lazy" alt="末班公交站台，雨棚与路灯与落雨地面"></div>
+            <div class="body">
+              <h3>《末班车的人》</h3>
+              <p class="desc">单元式都市故事，每两集一位乘客。第7—8集的代驾线与上一单元共享同一家宵夜摊。</p>
+              <div class="meta"><span class="chip">都市单元剧</span><span>20 集 · 周六单更</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="blk" id="latest">
+        <div class="blk-head">
+          <span class="no">03</span>
+          <h2>最新更新与追剧日历</h2>
+          <p>更新日期以平台排播为准</p>
+        </div>
+        <div class="list">
+          <div class="li">
+            <span class="date">11月7日</span>
+            <div><div class="t">《雾港回声》第18—20集</div><div class="s">沉箱旧案进入复核阶段，法医室戏份新增16分钟，平台会员可提前看第20集。</div></div>
+            <span class="tag">悬疑刑侦</span>
+          </div>
+          <div class="li">
+            <span class="date">11月6日</span>
+            <div><div class="t">《九号售楼处》24集完结</div><div class="s">终章发布会日，片尾加了3分钟主创对谈，解释为何删掉原定的海外开盘线。</div></div>
+            <span class="tag">职场商战</span>
+          </div>
+          <div class="li">
+            <span class="date">11月5日</span>
+            <div><div class="t">《骑楼下的糖水铺》第13集上线</div><div class="s">铺面转让合同成为关键道具，剧组在片尾标注了取景街道与真实年份。</div></div>
+            <span class="tag">港风怀旧</span>
+          </div>
+          <div class="li">
+            <span class="date">11月3日</span>
+            <div><div class="t">《合租第三年》加更两集</div><div class="s">因第9集押金争议讨论量大，平台临时把每日单更改成双更，排播表已同步。</div></div>
+            <span class="tag">都市情感</span>
+          </div>
+          <div class="li">
+            <span class="date">10月31日</span>
+            <div><div class="t">《第十二份证词》第11集延期</div><div class="s">原定周五双更改为单更，制作方称需补拍法庭辩论段落，第12集顺延至11月7日。</div></div>
+            <span class="tag">律政职场</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="blk" id="cats">
+        <div class="blk-head">
+          <span class="no">04</span>
+          <h2>频道分类入口</h2>
+          <p>按搜索习惯命名</p>
+        </div>
+        <div class="cats">
+          <a class="cat" href="/#picks"><b>都市情感短剧</b><span>旧情重逢、合租、离婚重启</span></a>
+          <a class="cat" href="/#picks"><b>悬疑刑侦短剧</b><span>沉箱旧案、法医流程、错误线索</span></a>
+          <a class="cat" href="/#picks"><b>职场商战短剧</b><span>售楼处、律所、餐饮供应链</span></a>
+          <a class="cat" href="/#picks"><b>港风怀旧短剧</b><span>骑楼、糖水铺、旧式唐楼</span></a>
+          <a class="cat" href="/#latest"><b>短剧追剧日历</b><span>双更、单更、延期与加更</span></a>
+          <a class="cat" href="/#deep"><b>短剧分集时长</b><span>8—15 分钟区间比较</span></a>
+          <a class="cat" href="/#guide"><b>短剧取景地</b><span>码头、售楼处、骑楼街</span></a>
+          <a class="cat" href="/#comments"><b>短剧观众评论</b><span>实测节奏与弃剧点</span></a>
+        </div>
+      </section>
+
+      <section class="blk" id="deep">
+        <div class="blk-head">
+          <span class="no">05</span>
+          <h2>深度解析：短剧“前六集定生死”这个说法站不住</h2>
+          <p>唯一主体阅读区 · 含可核对判断</p>
+        </div>
+        <div class="deep">
+          <p class="lead">短剧圈里流传一句话：前六集留不住人，后面再用力也白费。把 2026 年 10 月至 11 月在列的 12 部都市短剧的排播与讨论数据摊开，这个判断只在悬疑刑侦一类里成立，情感与职场线反而是“第八集效应”。</p>
+
+          <h3>一、悬疑线的前六集确实关键，但关键在第二集</h3>
+          <p>以《雾港回声》为例：10月12日首播当天放出前3集，第二集结尾给出沉箱编号与失踪者手表两块物证；平台侧的追看曲线在这一集之后才抬头。同档期的《午夜便利店》把第一个实质线索放在第五集，10月19日更新后评论里出现大量“看不懂在查什么”的反馈。两部剧总集数分别是20和22，单集时长都在12分钟上下，差别集中在第二集有没有可核对的物证。</p>
+          <p>所以“六集”是两个数字被说混了。悬疑短剧的第二集要交付第一块证据，第六集则是第一个小结论的截止线。把两者合并成“前六集定生死”，丢掉的是物证出现的时间点。</p>
+
+          <div class="check">
+            <h4>可核对结构：悬疑短剧前三集的判断清单</h4>
+            <ul>
+              <li>第1集是否给出案发时间锚点，精确到日或小时；</li>
+              <li>第2集是否出现可复述的物证，比如编号、手表、监控时间戳；</li>
+              <li>第3集是否至少有一个错误线索，并且被人当场否掉；</li>
+              <li>三集合计时长是否落在30—40分钟，超过45分钟容易拖。</li>
+            </ul>
+          </div>
+
+          <h3>二、情感与职场线在第八集才见分晓</h3>
+          <p>《合租第三年》10月26日首播，第1—7集讨论量平稳，第8集押金分摊争执上线后，站内收藏数在三天里从412涨到1097。冲突点很具体：三个人按居住面积分摊押金，还是一人一份，账单列到了水电户号。第9集加更正是这个数据推动的排播调整，平台在11月3日把每日单更改为双更。</p>
+          <p>《九号售楼处》更明显。第5集之前都在铺垫楼盘与人物关系，第8集清退定金那一场，认购书条款被念出三条并附了签约日期，之后才出现成规模的二创剪辑。这两部剧的共性是把“可执行的规则”放在中段，而不是开头。</p>
+
+          <h3>三、说法差异：制作方与观众对“节奏”的定义不同</h3>
+          <p>10月30日《第十二份证词》主创在一次直播里提到，“短剧节奏指的是每集结尾有没有钩子”。同一天该剧的观众评论里，被点赞最多的意见是“钩子太密，人物没时间喘气”。两种说法指向不同的对象：前者看的是分集结构，后者看的是角色可信度。</p>
+          <p>这部剧第11集因此延期，制作方称要补拍法庭辩论段落，第12集顺延至11月7日。延期的直接后果是本应连续的双更被打断，追剧日历上出现了四天空档。把排播波动和内容质量问题分开看，才不会把一次补拍误读成整部剧失控。</p>
+
+          <div class="quote">
+            单集12分钟的短剧，前六集最多72分钟。用72分钟判断一部20集的剧，等于用片头判断整部电影。<cite>——站内编审组对12部在列短剧的复盘记录，2026年11月4日</cite>
+          </div>
+
+          <h3>四、一个可反驳的推论</h3>
+          <p>如果“前六集定生死”成立，那么第1—6集讨论量高的剧，完结时收藏数应该更高。站内可核对的数据不支持这个推论：《午夜便利店》前六集的单集平均评论数为143条，高于《雾港回声》的121条，但完结收藏数是1842对2657。评论多不等于留存高，前六集的热度和完结时的黏性不是一条曲线。</p>
+          <p>这个推论当然可以被反驳——样本只有12部，且都集中在都市题材。但它至少说明，把“前六集”当作统一标准，会误判情感与职场两类剧，也会让悬疑剧把物证硬塞进第一集，牺牲掉本可以慢慢铺的现场感。</p>
+        </div>
+      </section>
+
+      <section class="blk" id="guide">
+        <div class="blk-head">
+          <span class="no">06</span>
+          <h2>选剧指南：按四步筛掉不合口味的</h2>
+          <p>上手可执行</p>
+        </div>
+        <div class="steps">
+          <div class="step"><div><b>先看总集数与单集时长</b><p>20集、单集12分钟，总时长约4小时，适合两个晚上看完；26集每日更新则要跟两周。</p></div></div>
+          <div class="step"><div><b>核对排播是否稳定</b><p>打开追剧日历，看有没有“延期”“补拍”标注。有补拍记录不代表剧差，但会打乱追更节奏。</p></div></div>
+          <div class="step"><div><b>试看第二集结尾</b><p>悬疑看有没有物证，情感看有没有具体障碍，职场看有没有规则被念出来。三样都没有，可以放下。</p></div></div>
+          <div class="step"><div><b>再看评论区提到的弃剧点</b><p>重点找写清集数与情节的评论。只说“难看”的不算，写明“第14集证人翻供太急”的才有参考价值。</p></div></div>
+        </div>
+        <div class="cmp" style="margin-top:14px">
+          <div class="a">
+            <h4>适合连刷的情形</h4>
+            <ul>
+              <li>总集数≤20，单集≤12分钟</li>
+              <li>已完结或已更新过半</li>
+              <li>单元结构，跳集影响小</li>
+            </ul>
+          </div>
+          <div class="b">
+            <h4>适合追更的情形</h4>
+            <ul>
+              <li>每周固定双更，排播稳定</li>
+              <li>主线连续，跳集会断线索</li>
+              <li>有主创对谈或片尾补充</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="blk" id="faq">
+        <div class="blk-head">
+          <span class="no">07</span>
+          <h2>常见问答</h2>
+          <p>点开查看</p>
+        </div>
+        <details class="faq">
+          <summary>都市短剧一般多少集、每集多长？</summary>
+          <div class="ans"><p>2026年10月至11月在列的都市短剧，总集数集中在18—26集，单集时长8—15分钟。悬疑刑侦偏短，常为18—24集、单集10—15分钟；都市情感多为20—30集、单集8—12分钟。总时长通常落在3.5—6小时。</p></div>
+        </details>
+        <details class="faq">
+          <summary>《雾港回声》的更新节奏是怎样的？</summary>
+          <div class="ans"><p>每周三双更，会员可提前看一集。11月7日已更新第18—20集，剩余集数按平台排播表推进。补看时注意第17集结尾的物证交接，第18集开头会直接引用。</p></div>
+        </details>
+        <details class="faq">
+          <summary>短剧的取景地信息可信吗，怎么核对？</summary>
+          <div class="ans"><p>港风类短剧常在片尾标注街道与年份，《骑楼下的糖水铺》第13集片尾列出取景街道与铺位号。核对方法是把片尾标注与剧中出现的路牌、铺面招牌对照，能对上的可信度较高；只写“某老城区”的通常无法核实。</p></div>
+        </details>
+        <details class="faq">
+          <summary>追剧日历里的“延期”“补拍”是什么意思？</summary>
+          <div class="ans"><p>延期指原定更新日没有上线，补拍指制作方在播出期间追加拍摄。10月31日《第十二份证词》第11集延期，制作方说明需补拍法庭辩论段落，第12集顺延至11月7日。这类标注只影响排播，不等于内容被重做。</p></div>
+        </details>
+        <details class="faq">
+          <summary>为什么有的剧第二集就能看出好坏？</summary>
+          <div class="ans"><p>悬疑刑侦类的第二集通常要交付第一块物证，比如沉箱编号或监控时间戳。物证给得具体，后面的推理才有落点；给不出，观众就无法判断角色在查什么。情感与职场类的关键节点更靠后，一般在第七到第九集。</p></div>
+        </details>
+        <details class="faq">
+          <summary>单元式都市短剧可以跳集看吗？</summary>
+          <div class="ans"><p>可以，但要注意共享场景。《末班车的人》每两集一位乘客，第7—8集的代驾线与前一个单元共用同一家宵夜摊，跳过前一个单元会漏掉摊主的背景交代。跳集前先看片头是否标“单元X”。</p></div>
+        </details>
+      </section>
+
+      <section class="blk" id="comments">
+        <div class="blk-head">
+          <span class="no">08</span>
+          <h2>观众评论：写清集数的才有用</h2>
+          <p>含中性意见</p>
+        </div>
+        <div class="cmts">
+          <div class="cmt">
+            <div class="who"><span class="av">林</span><b>林岸</b><span>11月7日</span><span class="rate">★★★★☆</span></div>
+            <p>《雾港回声》第18集法医室那段把鉴定流程拆成取样和比对两步，终于不像前几集那样一句话带过。就是码头夜戏的雨声有点盖台词。</p>
+          </div>
+          <div class="cmt mid">
+            <div class="who"><span class="av">周</span><b>周三斤</b><span>11月6日</span><span class="rate">★★★☆☆</span></div>
+            <p>《九号售楼处》第11集谈判戏条款念得挺细，但清退定金之后两集又回到办公室斗嘴，节奏掉下来了。24集里我觉得有3集可以并掉。</p>
+          </div>
+          <div class="cmt neg">
+            <div class="who"><span class="av">陈</span><b>陈皮不加糖</b><span>11月5日</span><span class="rate">★★☆☆☆</span></div>
+            <p>《骑楼下的糖水铺》第13集的铺面转让合同，字体和盖章位置前后不一致，前一个镜头章在右下，后一个镜头跑到左上。细节控看着有点出戏。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="av">许</span><b>许记</b><span>11月4日</span><span class="rate">★★★★☆</span></div>
+            <p>《合租第三年》第8集那个押金分摊的争执写得真实，账单列到水电户号了。加更两集是好事，但双更之后每集时长从11分钟掉到9分钟，有点仓促。</p>
+          </div>
+          <div class="cmt mid">
+            <div class="who"><span class="av">阿</span><b>阿岚</b><span>11月3日</span><span class="rate">★★★☆☆</span></div>
+            <p>《末班车的人》第7—8集的代驾线不错，宵夜摊那个摊主在前一个单元出现过，算是个小彩蛋。不过单元式看多了会觉得每两集都要重新认人，累。</p>
+          </div>
+          <div class="cmt">
+            <div class="who"><span class="av">顾</span><b>顾青禾</b><span>11月2日</span><span class="rate">★★★★☆</span></div>
+            <p>《第十二份证词》第11集延期能理解，补拍法庭辩论段落总比硬剪好。第10集证人翻供那段给了三段前情回看，比单纯反转舒服。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="blk" id="news">
+        <div class="blk-head">
+          <span class="no">09</span>
+          <h2>相关资讯</h2>
+          <p>行业与排播动态</p>
+        </div>
+        <div class="news">
+          <div class="newsitem">
+            <div class="top"><b>短剧单集时长收紧至12分钟区间</b><time datetime="2026-11-06">11月6日</time><span class="lbl">排播观察</span></div>
+            <p>本周在列的6部新剧中，有4部把单集控制在10—12分钟，较10月的14分钟区间缩短。制作方在片尾说明里提到，缩短是为了适配通勤时段的完整观看。</p>
+          </div>
+          <div class="newsitem">
+            <div class="top"><b>律政题材补拍成为排播波动主因</b><time datetime="2026-11-04">11月4日</time><span class="lbl">制作动态</span></div>
+            <p>10月至11月共有3部都市短剧出现补拍延期，其中2部涉及法庭或谈判场景。补拍平均影响2—4天排播，追剧日历已逐条标注。</p>
+          </div>
+          <div class="newsitem">
+            <div class="top"><b>港风短剧取景标注规范化</b><time datetime="2026-11-02">11月2日</time><span class="lbl">取景信息</span></div>
+            <p>《骑楼下的糖水铺》片尾开始列出具体街道与铺位号，同类剧目中有5部跟进。此前多数只写“老城区”，无法核对。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="blk" id="rec">
+        <div class="blk-head">
+          <span class="no">10</span>
+          <h2>相关推荐</h2>
+          <p>按搜索词归类</p>
+        </div>
+        <div class="tags">
+          <a class="tag" href="/#picks">都市情感短剧推荐</a>
+          <a class="tag" href="/#picks">悬疑刑侦短剧排行</a>
+          <a class="tag" href="/#latest">短剧追剧日历2026</a>
+          <a class="tag" href="/#deep">短剧分集时长对比</a>
+          <a class="tag" href="/#guide">短剧取景地打卡</a>
+          <a class="tag" href="/#comments">短剧弃剧点评论</a>
+          <a class="tag" href="/#picks">港风怀旧短剧片单</a>
+          <a class="tag" href="/#faq">短剧补拍延期说明</a>
+        </div>
+      </section>
+
+      <section class="blk" id="rank">
+        <div class="blk-head">
+          <span class="no">11</span>
+          <h2>站内收藏榜与时间线</h2>
+          <p>数据截至11月7日</p>
+        </div>
+        <div class="rank" style="margin-bottom:14px">
+          <div class="rk"><span class="n top">1</span><div><div class="nm">《雾港回声》</div><div class="sub">悬疑刑侦 · 20集 · 周三双更</div></div><span class="val">收藏 2657</span></div>
+          <div class="rk"><span class="n top">2</span><div><div class="nm">《九号售楼处》</div><div class="sub">职场商战 · 24集 · 11月6日完结</div></div><span class="val">收藏 2214</span></div>
+          <div class="rk"><span class="n">3</span><div><div class="nm">《合租第三年》</div><div class="sub">都市情感 · 26集 · 每日更新</div></div><span class="val">收藏 1097</span></div>
+          <div class="rk"><span class="n">4</span><div><div class="nm">《骑楼下的糖水铺》</div><div class="sub">港风怀旧 · 22集 · 周二单更</div></div><span class="val">收藏 986</span></div>
+          <div class="rk"><span class="n">5</span><div><div class="nm">《第十二份证词》</div><div class="sub">律政职场 · 18集 · 第12集11月7日</div></div><span class="val">收藏 874</span></div>
+        </div>
+        <div class="timeline">
+          <div class="tl"><time datetime="2026-11-07">11月7日</time><b>《雾港回声》三集连更</b><p>第18—20集上线，沉箱旧案进入复核。</p></div>
+          <div class="tl"><time datetime="2026-11-06">11月6日</time><b>《九号售楼处》完结</b><p>片尾加3分钟主创对谈，说明删减海外开盘线的原因。</p></div>
+          <div class="tl"><time datetime="2026-11-03">11月3日</time><b>《合租第三年》改为双更</b><p>押金争议讨论量上升，排播表同步调整。</p></div>
+          <div class="tl"><time datetime="2026-10-31">10月31日</time><b>《第十二份证词》第11集延期</b><p>补拍法庭辩论段落，第12集顺延。</p></div>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="side" aria-label="侧栏导航与补充信息">
+      <div class="panel">
+        <h3>栏目导航</h3>
+        <nav class="side-nav" id="sideNav" aria-label="本页栏目快速跳转">
+          <a href="/#overview">领域概览</a>
+          <a href="/#picks">本周精选片单</a>
+          <a href="/#latest">最新更新与追剧日历</a>
+          <a href="/#cats">频道分类入口</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#guide">选剧指南</a>
+          <a href="/#faq">常见问答</a>
+          <a href="/#comments">观众评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#rec">相关推荐</a>
+          <a href="/#rank">收藏榜与时间线</a>
+        </nav>
+      </div>
+      <div class="panel">
+        <h3>今日排播速览</h3>
+        <p class="mini">11月7日（周六）：《雾港回声》第18—20集；《末班车的人》第7—8集单元一收尾；《第十二份证词》第12集补位上线。</p>
+      </div>
+      <div class="panel">
+        <h3>数据口径</h3>
+        <p class="mini">收藏数与评论数取自站内片单统计，更新时间11月7日22时。补拍与延期信息以制作方公开说明为准，未获说明的条目不入榜单。</p>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="fbrand">
+          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#2a3559"/>
+            <path d="M18 22h28v20H18z" fill="none" stroke="#f2b544" stroke-width="4"/>
+            <path d="M27 28l10 5-10 5z" fill="#f2b544"/>
+          </svg>
+          <b>花都影视hdys网</b>
+        </div>
+        <p>把都市短剧的集数、排播、取景和规则摊开写，追之前先看清总时长和更新节拍。</p>
+      </div>
+      <div>
+        <h4>片单入口</h4>
+        <ul>
+          <li><a href="/#picks">都市情感短剧片单</a></li>
+          <li><a href="/#picks">悬疑刑侦短剧排行</a></li>
+          <li><a href="/#picks">港风怀旧短剧</a></li>
+          <li><a href="/#cats">频道分类总览</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>追剧工具</h4>
+        <ul>
+          <li><a href="/#latest">短剧追剧日历</a></li>
+          <li><a href="/#guide">四步选剧指南</a></li>
+          <li><a href="/#deep">分集时长解析</a></li>
+          <li><a href="/#rank">站内收藏榜</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>观众与问答</h4>
+        <ul>
+          <li><a href="/#comments">观众实测评论</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#news">行业与排播资讯</a></li>
+          <li><a href="/#rec">相关推荐标签</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>页内条目、评论、收藏数与排播信息均为示例数据，用于展示栏目结构；实际剧集信息以各平台公开页面为准。</span>
+      <span>更新时间：2026年11月7日 · 对应正文《雾港回声》第18—20集更新与站内收藏榜。</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"花都影视hdys网",
+  "inLanguage":"zh-CN",
+  "description":"都市短剧片单与选剧参考，含分集时长、追剧日历、取景地与观众评论。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"都市短剧一般多少集、每集多长？","acceptedAnswer":{"@type":"Answer","text":"2026年10月至11月在列的都市短剧，总集数集中在18—26集，单集时长8—15分钟。悬疑刑侦偏短，常为18—24集、单集10—15分钟；都市情感多为20—30集、单集8—12分钟。"}},
+    {"@type":"Question","name":"《雾港回声》的更新节奏是怎样的？","acceptedAnswer":{"@type":"Answer","text":"每周三双更，会员可提前看一集。11月7日已更新第18—20集，剩余集数按平台排播表推进。"}},
+    {"@type":"Question","name":"短剧的取景地信息可信吗，怎么核对？","acceptedAnswer":{"@type":"Answer","text":"港风类短剧常在片尾标注街道与年份，可把片尾标注与剧中出现的路牌、铺面招牌对照，能对上的可信度较高。"}},
+    {"@type":"Question","name":"追剧日历里的“延期”“补拍”是什么意思？","acceptedAnswer":{"@type":"Answer","text":"延期指原定更新日没有上线，补拍指制作方在播出期间追加拍摄。10月31日《第十二份证词》第11集延期，制作方说明需补拍法庭辩论段落。"}},
+    {"@type":"Question","name":"为什么有的剧第二集就能看出好坏？","acceptedAnswer":{"@type":"Answer","text":"悬疑刑侦类的第二集通常要交付第一块物证，物证给得具体，后面的推理才有落点；情感与职场类的关键节点更靠后，一般在第七到第九集。"}},
+    {"@type":"Question","name":"单元式都市短剧可以跳集看吗？","acceptedAnswer":{"@type":"Answer","text":"可以，但要注意共享场景。《末班车的人》第7—8集的代驾线与前一个单元共用同一家宵夜摊，跳集前先看片头是否标“单元X”。"}}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=860){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape'&&nav.classList.contains('open')){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  var q=document.getElementById('q');
+  var form=document.getElementById('searchForm');
+  var note=document.getElementById('searchNote');
+  function runSearch(){
+    if(!q||!note)return;
+    var kw=q.value.trim();
+    if(!kw){note.classList.remove('on');note.textContent='';return;}
+    var blocks=document.querySelectorAll('.blk');
+    var hits=[];
+    blocks.forEach(function(b){
+      if(b.textContent.indexOf(kw)>-1){
+        var h2=b.querySelector('h2');
+        hits.push(h2?h2.textContent.split('：')[0]:'相关栏目');
+      }
+    });
+    note.classList.add('on');
+    if(hits.length){
+      note.textContent='找到 '+hits.length+' 个栏目含“'+kw+'”：'+hits.join('、')+'。可点击侧栏导航跳转查看。';
+    }else{
+      note.textContent='没有找到含“'+kw+'”的条目。换个剧名、演员名或类型词再试，例如“雾港”“悬疑”“售楼处”。';
+    }
+  }
+  if(form){
+    form.addEventListener('submit',function(e){e.preventDefault();runSearch();});
+  }
+  if(q){
+    q.addEventListener('input',function(){if(!q.value.trim()){note.classList.remove('on');note.textContent='';}});
+  }
+
+  var links=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections=links.map(function(a){
+    var id=a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos=window.scrollY+140;
+    var idx=-1;
+    sections.forEach(function(s,i){if(s&&s.offsetTop<=pos)idx=i;});
+    links.forEach(function(a,i){a.classList.toggle('active',i===idx);});
+  }
+  window.addEventListener('scroll',highlight,{passive:true});
+  highlight();
+
+  var toTop=document.getElementById('toTop');
+  function toggleTop(){
+    if(!toTop)return;
+    toTop.classList.toggle('on',window.scrollY>560);
+  }
+  window.addEventListener('scroll',toggleTop,{passive:true});
+  toggleTop();
+  if(toTop){
+    toTop.addEventListener('click',function(){
+      var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({top:0,behavior:reduce?'auto':'smooth'});
+    });
+  }
+})();
+</script>
+</body>
+                            </html>
